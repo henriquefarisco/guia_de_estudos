@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_app_main"
+    tools:context=".MainActivity"
+    android:topRightRadius="40dp"
+    android:topLeftRadius="40dp"
+    android:bottomRightRadius="40dp"
+    android:bottomLeftRadius="40dp">
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/welcome_main"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:importantForAccessibility="no"
+        android:src="@drawable/image_mobile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcome_text"
+        tools:ignore="ImageContrastCheck"
+        />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view"
+        android:topRightRadius="40dp"
+        android:topLeftRadius="40dp"
+        android:bottomRightRadius="40dp"
+        android:bottomLeftRadius="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_container_buttons"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:topRightRadius="40dp"
+            android:topLeftRadius="40dp"
+            android:bottomRightRadius="40dp"
+            android:bottomLeftRadius="40dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/administrativo_button"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/cor_investimentos"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="20dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/administrativo"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="8dp"/>
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/administracao_woman_button"
+                        android:contentDescription="@string/woman_in_business"
+                        android:scaleType="fitCenter"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/catalog_button"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/cor_musicas"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="20dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/catalog_main"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="8dp"/>
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/catalogue_button"
+                        android:contentDescription="@string/catalogo_image"
+                        android:scaleType="fitCenter"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/empreendedorismo_button"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/cor_noticias"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="20dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/empreendedorismo"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="8dp"/>
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="10dp"
+                        android:contentDescription="@string/empreendedorismo_image"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/empreendedorismo_button"
+                        tools:ignore="ImageContrastCheck" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ia_button"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/cor_videos"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="20dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/ia"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="8dp"/>
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="10dp"
+                        android:contentDescription="@string/inteligencia_artificial_image"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/artificial_intelligence_button"
+                        tools:ignore="ImageContrastCheck" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/idiomas_main"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/cor_investimentos"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="20dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/idiomas"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="8dp"/>
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/idiomas_button"
+                        android:contentDescription="@string/linguas_e_idiomas_image"
+                        android:scaleType="fitCenter"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tec_main"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/cor_musicas"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="20dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/tecnologia"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="8dp"/>
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/computer_button"
+                        android:contentDescription="@string/computer_image"
+                        android:scaleType="fitCenter"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sobre_button"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/cor_noticias"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="20dp"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/sobre"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="8dp"/>
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/about_website_button"
+                        android:contentDescription="@string/sobre_image"
+                        android:scaleType="fitCenter"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
